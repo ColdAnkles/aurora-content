@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Primordial Crystal" type="Archetype" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_WARLOCK_PRIMORDIAL_CRYSTAL">
+		<meta>
+			<parent>Warlock</parent>
+		</meta>
+		<supports>Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Your patron seems to be a mysterious crystal which has existed long before recorded history.&lt;/p&gt; &lt;p class="indent"&gt;All who come into contact with this curious object see something within the endless reflections of its facets that speaks to them. It is of course, just a exceptionally magical rock, and the things seen within are merely reflections of ones selves.&lt;/p&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_EXPANDED_SPELL_LIST" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_CRYSTAL_FOCUS" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_LANCE_OF_POWER" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_CRYSTAL_HEART" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_REFLECTED_SELF" /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_EXPANDED_SPELL_LIST" level="1" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_CRYSTAL_FOCUS" level="1" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_LANCE_OF_POWER" level="6" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_CRYSTAL_HEART" level="10" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_REFLECTED_SELF" level="14" />
+		</rules>
+	</element>
+	<element name="Expanded Spell List" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_EXPANDED_SPELL_LIST">
+		<meta>
+			<parent>Primordial Crystal</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;The Primordial Crystal lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.&lt;/p&gt;
+&lt;h5 class="caption"&gt;PRIMORDIAL CRYSTAL EXPANDED SPELLS&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td&gt;Spell Level&lt;/td&gt;&lt;td&gt;Spells&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt;1st&lt;/td&gt;&lt;td&gt;&lt;em&gt;mage armor, magic missile&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2nd&lt;/td&gt;&lt;td&gt;&lt;em&gt;fused crystal, see invisibility&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3rd&lt;/td&gt;&lt;td&gt;&lt;em&gt;crystal wall, erupting earth&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4th&lt;/td&gt;&lt;td&gt;&lt;em&gt;crystal spike,stone shape&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;5th&lt;/td&gt;&lt;td&gt;&lt;em&gt;antilife shell, wall of force&lt;/em&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<sheet display="false">
+			<description />
+		</sheet>
+		<spellcasting name="Warlock" extend="true">
+			<extend>ID_PHB_SPELL_MAGE_ARMOR</extend>
+			<extend>ID_PHB_SPELL_MAGIC_MISSILE</extend>
+			<extend>ID_COAN_MEMA_SPELL_FUSED_CRYSTAL</extend>
+			<extend>ID_PHB_SPELL_SEE_INVISIBILITY</extend>
+			<extend>ID_COAN_MEMA_SPELL_CRYSTAL_WALL</extend>
+			<extend>ID_XGTE_SPELL_ERUPTING_EARTH</extend>
+			<extend>ID_COAN_MEMA_SPELL_CRYSTAL_SPIKE</extend>
+			<extend>ID_PHB_SPELL_STONE_SHAPE</extend>
+			<extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+			<extend>ID_PHB_SPELL_WALL_OF_FORCE</extend>
+		</spellcasting>
+	</element>
+	<element name="Crystal Focus" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_CRYSTAL_FOCUS">
+		<meta>
+			<parent>Primordial Crystal</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Beginning at 1st level, your patron bestows upon you a fraction of its crystalline power. You can use a gem or crystal as a spellcasting focus for your warlock spells. Additionally, as a bonus action on your turn, you can give yourself advantage on spell attack rolls until the end of the current turn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature twice, and you regain all expended uses of it when you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action" usage="2/Long Rest">
+			<description>You can use a gem or crystal as a spellcasting focus for your warlock spells. Additionally, as a bonus action on your turn, you can give yourself advantage on spell attack rolls until the end of the current turn.</description>
+		</sheet>
+	</element>
+	<element name="Lance of Power" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_LANCE_OF_POWER">
+		<meta>
+			<parent>Primordial Crystal</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, you have learned to focus your magic into strengthened beams of force.&lt;/p&gt;
+&lt;p class="indent"&gt;When you roll the maximum value on any damage dice, you can reroll those dice and add the additional rolls to the total. If the additional rolls roll the maximum values, continue rerolling and adding to the total.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you roll the maximum value on any damage dice, you can reroll those dice and add the additional rolls to the total. If the additional rolls roll the maximum values, continue rerolling and adding to the total.</description>
+		</sheet>
+	</element>
+	<element name="Crystal Heart" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_CRYSTAL_HEART">
+		<meta>
+			<parent>Primordial Crystal</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;At 10th level you consume the Crystal Heart, granting the power to fortify oneself with a crystalline magical shell. As a reaction to being hit with a damaging spell, you turn to crystal and become resistant to that damage type, including the triggering attack until the start of your next turn.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>As a reaction to being hit with a damaging spell, you turn to crystal and become resistant to that damage type, including the triggering attack until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Reflected Self" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_PRIMORDIAL_CRYSTAL_REFLECTED_SELF">
+		<meta>
+			<parent>Primordial Crystal</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Beginning at 14th level, whenever you score a critical hit with a warlock spell you may immediately cast the spell again at no cost. You must finish a short or long rest before you can use this feature again.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Whenever you score a critical hit with a warlock spell you may immediately cast the spell again at no cost.</description>
+		</sheet>
+	</element>
+</elements>

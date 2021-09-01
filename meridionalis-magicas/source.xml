@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Meridionalis Magicas" type="Source" source="Meridionalis Magicas" id="ID_COAN_SOURCE_MERIDIONALIS_MAGICAS">
+		<setters>
+			<set name="abbreviation">MEMA</set>
+			<set name="url">https://drive.google.com/file/d/1b_RVxbAjSOC1BdoZO5Ci7JahyU_mhxhb/view</set>
+			<set name="author" abbreviation="COAN">Cold_Ankles</set>
+			<set name="homebrew">true</set>
+			<set name="release">20201201</set>
+		</setters>
+	</element>
+</elements>

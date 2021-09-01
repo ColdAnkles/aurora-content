@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Path of the Crystal Guardian" type="Archetype" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_BARBARIAN_PATH_OF_THE_CRYSTAL_GUARDIAN">
+		<meta>
+			<parent>Barbarian</parent>
+		</meta>
+		<supports>Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Day 0.&lt;/em&gt;&lt;/strong&gt; Subject has crystals implanted within their upper body and incisions have been healed with magic. Health appears stable and recovery progressing as expecting.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Day 13.&lt;/em&gt;&lt;/strong&gt; Crystals have grown and punctured the subjects skin, seamlessly pushing out without causing visible injury. Subjects bodily functions remain fully operative.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Day 42.&lt;/em&gt;&lt;/strong&gt; Subject appears to have integrated the crystals into their body into a seamless suit of armor. Does not appear to impede movement, but rather enhances it. Have requested additional restraints be applied.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Day 67.&lt;/em&gt;&lt;/strong&gt; Subjects crystals occasionally glow and release small bursts of energy. Initially dismissed as equipment error, the bursts are now larger and visible to the naked eye. Growth rate concerning.&lt;/p&gt;
+&lt;p class="indent"&gt;The rest of the journal is burned beyond recognition.&lt;/p&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_CRYSTAL_HUSK" /&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_FLICKERING_REFLECTIONS" /&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_BLAZING_FURY" /&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_TOMB_OF_GLASS" /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_CRYSTAL_HUSK" level="3" />
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_FLICKERING_REFLECTIONS" level="6" />
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_BLAZING_FURY" level="10" />
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_TOMB_OF_GLASS" level="14" />
+		</rules>
+	</element>
+	<element name="Crystal Husk" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_CRYSTAL_HUSK">
+		<meta>
+			<parent>Path of the Crystal Guardian</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this path at 3rd level, you manifest a suit of crystal armor as your fury crystallizes into a physical substance. While raging, you are resistant to all damage from spells and if you use the dash action and move in a straight line, you can make a single weapon attack against all creatures within 5 feet of your stopping position.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>While raging, you are resistant to all damage from spells and if you use the dash action and move in a straight line, you can make a single weapon attack against all creatures within 5 feet of your stopping position.</description>
+		</sheet>
+	</element>
+	<element name="Flickering Reflections" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_FLICKERING_REFLECTIONS">
+		<meta>
+			<parent>Path of the Crystal Guardian</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Beginning at 6th level, when you’re targeted by a spell, you may choose to reflect it in all directions, causing each creature within 30 feet to be targeted by a copy of that spell. All attack rolls and damage rolls are made separately. The caster can maintain concentration for all targets at once, but if they end the effect on any creature by voluntarily dropping concentration, it ends for all of them.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you’re targeted by a spell, you may choose to reflect it in all directions, causing each creature within 30 feet to be targeted by a copy of that spell. All attack rolls and damage rolls are made separately. The caster can maintain concentration for all targets at once, but if they end the effect on any creature by voluntarily dropping concentration, it ends for all of them.</description>
+		</sheet>
+	</element>
+	<element name="Blazing Fury" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_BLAZING_FURY">
+		<meta>
+			<parent>Path of the Crystal Guardian</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;At 10th level you have learned to project your fury into fiery beams of magic. While raging, you can cast Sunbeam once until the rage ends. If your rage ends early and you are not incapacitated or unconscious, you can use your reaction to cast it. You cannot however concentrate on it.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>While raging, you can cast Sunbeam once until the rage ends. If your rage ends early and you are not incapacitated or unconscious, you can use your reaction to cast it. You cannot however concentrate on it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SUNBEAM" />
+		</rules>
+	</element>
+	<element name="Tomb of Glass" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_PATH_OF_THE_CRYSTAL_GUARDIAN_TOMB_OF_GLASS">
+		<meta>
+			<parent>Path of the Crystal Guardian</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;At 14th level, your resilience is that of legends. When you fail the saving throw for Relentless Rage your Crystal Husk goes wild and entombs you in a huge crystal pillar. The pillar has 100 hitpoints and is resistant to damage from spells. You emerge 1d4 hours later at full health. If the crystal is broken before then, you fall to the ground and make death saves normally.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you fail the saving throw for Relentless Rage your Crystal Husk goes wild and entombs you in a huge crystal pillar. The pillar has 100 hitpoints and is resistant to damage from spells. You emerge 1d4 hours later at full health. If the crystal is broken before then, you fall to the ground and make death saves normally.</description>
+		</sheet>
+	</element>
+</elements>

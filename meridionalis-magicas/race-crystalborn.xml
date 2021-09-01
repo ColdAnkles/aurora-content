@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Crystalborn" type="Race" source="Meridionalis Magicas" id="ID_MEMA_RACE_CRYSTALBORN">
+		<description>
+			<html>&lt;p&gt;Raw magic resonates within natural crystals and grows powerful, enlarging and becoming mobile into a living mass of crystalline rock.&lt;/p&gt;
+&lt;p&gt;Their growth from a natural crystal generally causes crystalborn to choose the name that matches that seed stone.&lt;br /&gt;
+&lt;b&gt;Names&lt;/b&gt;: Ruby, Emerald, Mica, Amethyst, Apatite, Millerite, Caclite, Chalcopyrite&lt;/p&gt;
+&lt;h4&gt;CRYSTALBORN TRAITS&lt;/h4&gt;
+&lt;span class="feature"&gt;Ability Score Increase.&lt;/span&gt;Your Strength score increases by 1.&lt;br /&gt;
+&lt;span class="feature"&gt;Age.&lt;/span&gt; Crystalborn do not age, but instead fade as the magic within them peters out. Some find ways to replenish their reserves to live longer.&lt;br /&gt;
+&lt;span class="feature"&gt;Alignment.&lt;/span&gt; Dependant on the magic that first infused them, most crystalborn are neutral but can be all alignments.&lt;br /&gt;
+&lt;span class="feature"&gt;Size.&lt;/span&gt; Tending between 5 and 7 feet and around 200 pounds. Your size is medium.&lt;br /&gt;
+&lt;span class="feature"&gt;Speed.&lt;/span&gt; Your base walking speed is 25 feet.&lt;br /&gt;
+&lt;span class="feature"&gt;Living Rock.&lt;/span&gt; You are immune to disease. You do not need to eat or breathe. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.&lt;br /&gt;
+&lt;span class="feature"&gt;Magical Resilience.&lt;/span&gt; You have +2 AC when targeted by a spell attack.&lt;br /&gt;
+&lt;span class="feature"&gt;Languages.&lt;/span&gt; You can speak, read, and write Common and Undercommon. Your voice sounds artificial and resonant, as if it were composed of distinct tones.&lt;br /&gt;
+&lt;span class="feature"&gt;Subrace.&lt;/span&gt; There are three subraces of crystalborn dependent on their starter stone.&lt;br /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="innate speed" value="25" bonus="base" />
+			<stat name="strength" value="1" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Sub Race" name="Crystalborn Subrace" supports="Crystalborn" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
+			<grant type="Racial Trait" id="ID_MEMA_RACIAL_TRAIT_LIVING_ROCK" />
+		</rules>
+	</element>
+	<element name="Metallic Crystalborn" type="Sub Race" source="Meridionalis Magicas" id="ID_MEMA_SUB_RACE_METAL">
+		<supports>Crystalborn</supports>
+		<description>
+			<html>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Ability Score Increase.&lt;/em&gt;&lt;/strong&gt; Your Constitution score increases by 2.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Damage Resistance.&lt;/em&gt;&lt;/strong&gt; You are resistant to slashing and fire damage.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" />
+			<grant type="Racial Trait" id="ID_MEMA_RACIAL_TRAIT_METALLIC_RESISTANCE" />
+		</rules>
+	</element>
+	<element name="Metallic Resistance" type="Racial Trait" source="Meridionalis Magicas" id="ID_MEMA_RACIAL_TRAIT_METALLIC_RESISTANCE">
+		<description>
+			<html>&lt;p&gt;You are resistant to slashing and fire damage.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="You are resistant to slashing and fire damage." />
+	</element>
+	<element name="Living Rock" type="Racial Trait" source="Meridionalis Magicas" id="ID_MEMA_RACIAL_TRAIT_LIVING_ROCK">
+		<description>
+			<html>&lt;p&gt;You are immune to disease. You do not need to eat or breathe. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="You are immune to disease. You do not need to eat or breathe. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal." />
+	</element>
+	<element name="Salt Crystalborn" type="Sub Race" source="Meridionalis Magicas" id="ID_MEMA_SUB_RACE_SALT">
+		<supports>Crystalborn</supports>
+		<description>
+			<html>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Ability Score Increase.&lt;/em&gt;&lt;/strong&gt; Your Dexterity score increases by 2.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Natural Irritants.&lt;/em&gt;&lt;/strong&gt; You can Help as a bonus action and it has a range of 15 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" />
+			<grant type="Racial Trait" id="ID_MEMA_RACIAL_TRAIT_NATURAL_IRRITANTS" />
+		</rules>
+	</element>
+	<element name="Natural Irritants" type="Racial Trait" source="Meridionalis Magicas" id="ID_MEMA_RACIAL_TRAIT_NATURAL_IRRITANTS">
+		<description>
+			<html>&lt;p&gt;You can Help as a bonus action and it has a range of 15 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="You are immune to disease. You do not need to eat or breathe. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal." />
+	</element>
+	<element name="Gem Crystalborn" type="Sub Race" source="Meridionalis Magicas" id="ID_MEMA_SUB_RACE_GEM">
+		<supports>Crystalborn</supports>
+		<description>
+			<html>&lt;html&gt;Ability Score Increase. Your Intelligence score increases by 2.
+Innate Magic. You know the Mold Earth cantrip. When you reach 3rd level, you can cast the Charged Blast spell once per day. When you reach 5th level, you can also cast the Fused Crystal spell once per day. Intelligence is your spellcasting ability for these spells.
+CHAPTER&lt;/html&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="intelligence" value="2" />
+			<grant type="Racial Trait" id="ID_MEMA_RACIAL_TRAIT_CRYSTALBORN_MAGIC" />
+		</rules>
+	</element>
+	<element name="Crystalborn Magic" type="Racial Trait" source="Meridionalis Magicas" id="ID_MEMA_RACIAL_TRAIT_CRYSTALBORN_MAGIC">
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+			<grant type="Spell" id="ID_COAN_MEMA_SPELL_CHARGED_BLAST" level="3" />
+			<grant type="Spell" id="ID_COAN_MEMA_SPELL_FUSED_CRYSTAL" level="5" />
+		</rules>
+		<spellcasting name="Crystalborn" ability="Intelligence" />
+	</element>
+</elements>

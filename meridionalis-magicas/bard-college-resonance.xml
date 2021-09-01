@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="College of Resonance" type="Archetype" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_BARD_COLLEGE_OF_RESONANCE">
+		<meta>
+			<parent>Bard</parent>
+		</meta>
+		<supports>Bard College</supports>
+		<description>
+			<html>&lt;p&gt;Bards of the College of Resonance are rarely found alone, but are usually working as a group to enhance the arts of other bards or each other. Whether being the background musicians for someone else’s performance or the effects department for a stage play, these diligent assistants rarely take the spotlight, but the heights achieved by entertainers would not be so nearly as lofty without their support crews.&lt;/p&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_BONUS_PROFICIENCIES" /&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_HARMONIZED_INSPIRATION" /&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_TIMED_TUNING" /&gt;
+&lt;div element="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_CONSONANCE" /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_HARMONIZED_INSPIRATION" level="3" />
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_TIMED_TUNING" level="6" />
+			<grant type="Archetype Feature" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_CONSONANCE" level="14" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiencies" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_BONUS_PROFICIENCIES">
+		<meta>
+			<parent>College of Resonance</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;When you join the College of Resonance at 3rd level, you gain proficiency in jeweler’s tools and the glass harp.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Harmonized Inspiration" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_HARMONIZED_INSPIRATION">
+		<meta>
+			<parent>College of Resonance</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Also at 3rd level, whenever a creature rolls a Bardic Inspiration die, any creatures that also have a Bardic Inspiration die can use their reaction to lock their Bardic Inspiration die to that value.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever a creature rolls a Bardic Inspiration die, any creatures that also have a Bardic Inspiration die can use their reaction to lock their Bardic Inspiration die to that value.</description>
+		</sheet>
+	</element>
+	<element name="Timed Tuning" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_TIMED_TUNING">
+		<meta>
+			<parent>College of Resonance</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, whenever you roll an attack with advantage, if both rolls would hit, your next attack against the same creature has advantage.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you roll an attack with advantage, if both rolls would hit, your next attack against the same creature has advantage.</description>
+		</sheet>
+	</element>
+	<element name="Consonance" type="Archetype Feature" source="Meridionalis Magicas" id="ID_MEMA_ARCHETYPE_FEATURE_COLLEGE_OF_RESONANCE_CONSONANCE">
+		<meta>
+			<parent>College of Resonance</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Beginning at 14th level, whenever an ally rolls one of your Bardic Inspiration dice, you add that to your next spell or weapon attack roll. If multiple allies roll before your next spell or weapon attack roll, you take the highest value.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever an ally rolls one of your Bardic Inspiration dice, you add that to your next spell or weapon attack roll. If multiple allies roll before your next spell or weapon attack roll, you take the highest value.</description>
+		</sheet>
+	</element>
+</elements>

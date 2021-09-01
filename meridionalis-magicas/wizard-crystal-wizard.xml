@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Crystal Wizard" type="Archetype" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_WIZARD_CRYSTAL_WIZARD">
+		<meta>
+			<parent>Wizard</parent>
+		</meta>
+		<supports>Arcane Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Many mages stumble on the curious world of crystal magics, and find something more than they were expecting within the objects of their study.&lt;/p&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_TIGERS_EYE" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_GEODE_GARDEN" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_IN_AMBER_CLAD" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_CRYSTAL_RESONANCE" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_BRILLIANT_REFLECTIONS" /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_TIGERS_EYE" level="2" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_GEODE_GARDEN" level="2" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_IN_AMBER_CLAD" level="6" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_CRYSTAL_RESONANCE" level="10" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_BRILLIANT_REFLECTIONS" level="14" />
+		</rules>
+	</element>
+	<element name="Tiger's Eye" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_TIGERS_EYE">
+		<meta>
+			<parent>Crystal Wizard</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Beginning when you select this school at 2nd level, you become proficiency in Jewelers tools and can double your proficiency bonus for any check you make with them. Additionally, at the end of a long rest, you may store a spell in a crystal. Cast the spell, expending components and spell slots as normal. You can use this crystal later and cause the stored spell to be cast so long as the crystal is on your person. If it is unused before your next long rest, you may either refresh the existing crystal by recasting the stored spell, or create a new one. The maximum spell slot you can use to enchant the crystal is equal to your wizard level divided by three, minimum one.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>At the end of a long rest, you may store a spell in a crystal. Cast the spell, expending components and spell slots as normal. You can use this crystal later and cause the stored spell to be cast so long as the crystal is on your person. If it is unused before your next long rest, you may either refresh the existing crystal by recasting the stored spell, or create a new one. The maximum spell slot you can use to enchant the crystal is equal to your wizard level divided by three, minimum one.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Geode Garden" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_GEODE_GARDEN">
+		<meta>
+			<parent>Crystal Wizard</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Also at 2nd level, whenever you cast a spell with a wizard spell slot, sharp crystals grow covering a number of 5x5 foot squares equal to your wizard level + the spell’s level, starting with the nearest square to you without crystals.&lt;/p&gt;
+&lt;p class="indent"&gt;Crystal-covered squares are difficult terrain for any hostile creature and they take 1d6 piercing damage if it starts its turn inside the crystals, or enters the affected area for the first time on its turn. The crystals remain until the end of your next long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you cast a spell with a wizard spell slot, sharp crystals grow covering a number of 5x5 foot squares equal to {{geode garden:base cover}}+ the spell’s level, starting with the nearest square to you without crystals.
+Crystal-covered squares are difficult terrain for any hostile creature and they take 1d6 piercing damage if it starts its turn inside the crystals, or enters the affected area for the first time on its turn. The crystals remain until the end of your next long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="geode garden:base cover" value="level:wizard" />
+		</rules>
+	</element>
+	<element name="In Amber Clad" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_IN_AMBER_CLAD">
+		<meta>
+			<parent>Crystal Wizard</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level you learn the Mage Armor spell. If you already know this spell you can learn a different 1st level wizard spell of your choice. Whenever you cast Mage Armor, you can replace the material components with a crystal, if you do so, the target’s AC becomes 13 + your Intelligence modifier as the armor takes the form of a crystalline shell of durable armor. You can only cast Mage Armor this way twice and regain all uses of this feature when you complete a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="2/Long Rest">
+			<description>Whenever you cast Mage Armor, you can replace the material components with a crystal, if you do so, the target’s AC becomes {{in amber clad:ac}} as the armor takes the form of a crystalline shell of durable armor.</description>
+		</sheet>
+		<rules>
+			<stat name="in amber clad:ac" value="13" />
+			<stat name="in amber clad:ac" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Crystal Resonance" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_CRYSTAL_RESONANCE">
+		<meta>
+			<parent>Crystal Wizard</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, whenever you make a spell attack against a target in your Geode Garden, you can treat any roll of 9 or lower as a 10.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Starting at 10th level, whenever you make a spell attack against a target in your Geode Garden, you can treat any roll of 9 or lower as a 10.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
+		</rules>
+	</element>
+	<element name="Brilliant Reflections" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_CRYSTAL_WIZARD_BRILLIANT_REFLECTIONS">
+		<meta>
+			<parent>Crystal Wizard</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;At 14th level, when you cast Mage Armor as in In Amber Clad, the target becomes resistant to damage from spells. Additionally, whenever you grow your Geode Garden, the origin of growth can be an ally within 60 feet, instead of yourself.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you cast Mage Armor as in In Amber Clad, the target becomes resistant to damage from spells. Additionally, whenever you grow your Geode Garden, the origin of growth can be an ally within 60 feet, instead of yourself.</description>
+		</sheet>
+	</element>
+</elements>

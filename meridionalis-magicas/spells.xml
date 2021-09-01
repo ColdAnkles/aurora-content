@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Adaptive Weapon" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_ADAPTIVE_WEAPON">
+		<supports>Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You create an array of shimmering magical shards that whip around and form different shapes to best target its opponent. The shards appear in a 5 foot square within range, and the exact appearance of the shards depends on the caster. The shards last for one minute or until you cast this spell again. When you cast the
+spell you can target a creature within 5 feet of the shards. The creature makes the saving throw with its lowest saving throw attribute and takes 3d8 force damage on a failure.&lt;/p&gt;
+&lt;p class="indent"&gt;As a action, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;At higher levels.&lt;/b&gt; When cast with a 7th level spell slot, the secondary attacks are done with a bonus action instead of an action.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Altar of Faith" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_ALTAR_OF_FAITH">
+		<supports>Cleric, Druid, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You raise an altar formed of earth or wood; carved with intricate holy symbols of your faith.
+Any medicine or religion checks performed upon a creature that lies on this altar have advantage.&lt;/p&gt;
+&lt;p class="indent"&gt;Any creatures antithetical to your faith have disadvantage against resisting/escaping any
+effects while upon the altar. If a body under the effect of "Gentle Repose" is laid upon the altar and is not opposed to the faith of the altar’s creator, the time limit for "Gentle Repose" is suspended.&lt;/p&gt;
+&lt;p class="indent"&gt;The altar loses the benefits regarding restraining others if it is not maintained with
+regular prayer by at least one member of your faith. The altar remains until physically destroyed or defiled by those of opposing faiths.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a religious icon used for prayer</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Aranvir's Recurrent Strikes" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_ARANVIRS_RECURRENT_STRIKES">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Choose a creature you can see within 60 feet of you and make a ranged spell attack. On a hit an arrow of magic strikes the target, sticking in the wound and dealing 1d4 force damage. For the duration, at the end of your turn, if you hit the target with another attack it receives an additional 1d4 force damage. The spell ends early if you miss or attack a different target.&lt;/p&gt;
+&lt;p class="indent"&gt;These subsequent hits do not need to be from this spell. The target may make a strength check as an action to remove the magic arrow.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Arcane Discus" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_ARCANE_DISCUS">
+		<supports>Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A discus of arcane energy appears in your hand.&lt;/p&gt;
+&lt;p class="indent"&gt;You throw the discus at one creature you can see within 30 feet. This creature makes a dexterity saving throw. On a fail the creature takes 3d6 force damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you have cast this spell this way you may optionally maintain concentration on the discus, and instead of fading, it remains in the space of the creature it targeted. On your next turn, use your action to have it attack again.&lt;/p&gt;
+&lt;p class="indent"&gt;This second attack must target one creature you can see within 30 feet of the discus, if there are no creatures within 30 feet the discus fades.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Boreal Spear" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_BOREAL_SPEAR">
+		<supports>Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You launch a long spear of ice at one creature you can see within 60 feet of you, making a ranged spell attack. On a hit the target takes 5d10 cold damage and the spear freezes in place in the wound.&lt;/p&gt;
+&lt;p class="indent"&gt;The target can use an action to attempt to remove the spear, but if they move or takes an action that isn’t to remove the spear it takes 3d6 cold damage as the spear shatters into pieces.&lt;/p&gt;
+&lt;p class="indent"&gt;The spear is removed upon a successful strength check against your spell save DC, or any fire damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shard of ice</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bulwark of the Northern Rime" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_BULWARK_OF_THE_NORTHERN_RIME">
+		<supports>Druid, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You gesture to an unoccupied position you can see, calling forth the grinding ice of the far north, imbuing its power in a bulwark of never-melting ice. The bulwark takes the form of a 15 foot pillar of ice, around 5 feet in diameter. Allied creatures that end their turn within 10 feet of the bulwark gain +2 AC as icy armour forms on them. This icy armour lasts until they end their turn beyond 10 feet from the bulwark. The bulwark itself has AC 12 and HP 30, immune to psychic and poison damage, vulnerability to fire and resistance to all else.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Charged Blast" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_CHARGED_BLAST">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You gather magic in your hands, forming it into a projectile. Make a ranged spell attack against a target in range. On a hit, the target takes 2d8 force damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Alternatively, you can delay releasing the projectile. On your next turn, you can use your action to release the charged projectile. Make a ranged spell attack against a target in range. On a hit, the target takes 3d8 force damage and is pushed 15 feet and knocked prone if it is Large or smaller. If you don’t use your action to release the projectile, it fizzles out and the spell is lost.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action or Special</set>
+			<set name="duration">1 round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Clumsy Step" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_CLUMSY_STEP">
+		<supports>Bard</supports>
+		<description>
+			<html>&lt;p&gt;You swipe your hand at the creature as it moves.&lt;/p&gt;
+&lt;p class="indent"&gt;When it finishes its movement it makes a dexterity saving throw, on a failure it falls prone and takes 1d10 bludgeoning damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 reaction, which you take when a creature on the ground within 60 feet of you is moved against its will</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Convocation" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_CONVOCATION">
+		<supports>Bard, Cleric, Druid, Ranger, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You form your magic into an arcane framework accepting the power of other spellcasters to augment your own. Select a spell of first or second level that you have the components for. A number of spellcasters up to your spellcasting modifier who are within 60 feet of you may expend a spell slot of the level of spell you chose.&lt;/p&gt;
+&lt;p class="indent"&gt;When at least one spellcaster does so, the spell you chose becomes amplified in one of range, duration, damage, summons, or affected creatures.&lt;/p&gt;
+&lt;p class="indent"&gt;You cannot use any At higher level properties if you convoke a spell.&lt;/p&gt;
+&lt;p class="indent"&gt;You may select a non-ritual spell, in which case the casting time increases by 30 minutes; otherwise the casting time is equal to the ritual spell chosen.&lt;/p&gt;
+&lt;p class="indent"&gt;Only one contributor to the convocation is required to maintain concentration at any given time. So long as at least one person is concentrating, the others may drop and regain concentration as necessary.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Special</set>
+			<set name="duration">Special</set>
+			<set name="range">Special</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Crackling Bolt" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_CRACKLING_BOLT">
+		<supports>Paladin, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A crackling bolt of lightning issues forth and strikes a single creature in range doing 7d10 lightning damage.&lt;/p&gt;
+&lt;p class="indent"&gt;That creature must succeed a dexterity saving throw to increase the damage by 2d10 and redirect the bolt to one other creature within 10 feet that has not already been struck by the bolt.&lt;/p&gt;
+&lt;p class="indent"&gt;The new target then repeats the saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;CHAPTER 3: SPELLS 11 If there are no creatures within 10 feet who haven’t been affected by this spell yet, the creature instead takes half damage on a successful dexterity saving throw. Failing the dexterity saving throw deals the damage to the failing creature. Creatures who are immune to lightning damage do not attempt the save, and the spell simply fails.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Crystal Spike" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_CRYSTAL_SPIKE">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You fling a shard of crystal at a creature, making a ranged spell attack. On a hit the crystal deals 4d8 piercing damage, 4d8 force damage and knocks the creature back 10 feet.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny crystal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Crystal Wall" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_CRYSTAL_WALL">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Three large crystal spikes emerge from the ground at points you can see within range. Each crystal is 10 foot square and 5 feet high, and they crumble when the spell ends. It blocks movement but not line of sight. Each crystal has AC 10 and 15 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;Any hostile ranged spell attack that passes through the wall’s space has disadvantage on the attack roll.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a large crystal, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Deceiving Bolt" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_DECEIVING_BOLT">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a bright bolt of energy and fling it at a creature. The creature makes a dexterity saving throw with advantage - on a hit it deals 5d8 force damage.&lt;/p&gt;
+&lt;p class="indent"&gt;On a miss the bolt flies past and curves around towards a second creature that is within 20ft of the first. The second creature makes a dexterity saving throw with disadvantage; on a hit it deals 3d8 force damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dimensional Anchor" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_DIMENSIONAL_ANCHOR">
+		<supports>Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;As an action touch the ground at your feet; a 60 foot radius sphere centred around the point you touched ceases to interact with other planes. No transportation to or via other planes succeeds and Ethereal Sight and Etherealness magics also fail.&lt;/p&gt;
+&lt;p class="indent"&gt;You have the option of making a permanent Dimensional Anchor by enchanting a gemstone.&lt;/p&gt;
+&lt;p class="indent"&gt;If you do so the spell is considered a ritual with time and cost per the table below.&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Gemstone Worth&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Duration&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Area&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;100GP&lt;/td&gt;&lt;td&gt;8 hours&lt;/td&gt;&lt;td&gt;circle, radius 60ft&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;500GP&lt;/td&gt;&lt;td&gt;12 hours&lt;/td&gt;&lt;td&gt;circle, radius 120ft&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1000GP&lt;/td&gt;&lt;td&gt;1 day&lt;/td&gt;&lt;td&gt;circle, radius 250ft&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;5000GP&lt;/td&gt;&lt;td&gt;2 days&lt;/td&gt;&lt;td&gt;circle, radius 500ft&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;10000GP&lt;/td&gt;&lt;td&gt;4 days&lt;/td&gt;&lt;td&gt;circle, radius 1000ft&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;50000GP&lt;/td&gt;&lt;td&gt;8 days&lt;/td&gt;&lt;td&gt;circle, radius 2000ft&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Special</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gemstone which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Dolorous Dirge" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_DOLOROUS_DIRGE">
+		<supports>Bard, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You play or sing a song of melancholy when an enemy creature in range falls to 0 hit points or less. Each creature within 20ft of the fallen enemy must make a wisdom saving throw or be overcome by grief. Creatures affected this way must use their next turn to do nothing but congregate around their fallen ally. Creatures who do not know the fallen creature are still affected, but feel very confused that they would grieve over a stranger or a former enemy.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 reaction, which you take when you see a creature within 60 feet of you fall to 0 hit points</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Ear Worm" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_EAR_WORM">
+		<supports>Bard</supports>
+		<description>
+			<html>&lt;p&gt;You perform a piece of music, or a poem, or perhaps simply shout a phrase. Filling the sound with your magic, all creatures who hear you make a charisma saving throw. On a failure your small performance sticks in their mind for 24 hours. Creatures immune to being charmed are not affected by the spell, but may get the performance stuck in their minds for other reasons.&lt;/p&gt;
+&lt;p class="indent"&gt;As these creatures go about their day, they find themselves unconsciously whistling or mimicking your performance and might spread it to others. Creatures who hear the Ear Worm second-hand must make the same charisma saving throw with advantage. Creatures who receive the Ear Worm second-hand have it stuck in their head until 24 hours from when you cast the spell, not when they received it.&lt;/p&gt;
+&lt;p class="indent"&gt;Creatures who successfully make the saving throw, or encounter it third-hand or later can still dwell on it for mundane reasons.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Faroe's Insidious Thorn" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_FAROES_INSIDIOUS_THORN">
+		<supports>Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Throw the thorn at a creature within range, cursing it with a slow death. Once an hour the thorn journeys towards the creatures heart and the creature must make a constitution saving throw against your spell save DC. If the creature fails three saving throws before it succeeds three, it dies immediately and is transformed into a plant like that from which the thorn or splinter was taken.&lt;/p&gt;
+&lt;p class="indent"&gt;If the creature is later the subject of an awaken spell, a successful intelligence save restores their original body and mind, as it was before the transformation. On a failed save, only one of body or mind is restored.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">6 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a thorn or splinter of plant matter, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Feedback" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_FEEDBACK">
+		<supports>Bard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You manipulate the threads of magic and tie them in knots. All magic users within a 30 feet radius of where you cast this spell perceive this as a high pitched whine whenever magic is cast.&lt;/p&gt;
+&lt;p class="indent"&gt;Any spellcasters, including allies and yourself, who are in the affected area must make a saving throw with your spellcasting attribute whenever they cast a spell, or any spell they cast affects them as well. If they are affected by their own spell, resolve it as if they cast the spell on themselves. I.E. If they use a single-target spell attack, the same spell attack is then made against them as well as the intended target(s). If they cast an area of effect spell, resolve it as if they were standing in the area.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;At higher levels.&lt;/em&gt;&lt;/strong&gt; For every level above 4th the radius increases by 5 feet.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">5 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fey Lure" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_FEY_LURE">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Choose a point within range, glowing motes of light appear in a 30 foot radius sphere centred on the point. Any creatures you choose who see the lights make a wisdom saving throw. On a failure they are unable to move further away from the centre.&lt;/p&gt;
+&lt;p class="indent"&gt;Creatures may reattempt the saving throw at the end of their turn. Creatures at the centre of the sphere make this saving throw with advantage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Frigid Wind" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_FRIGID_WIND">
+		<supports>Warlock</supports>
+		<description>
+			<html>&lt;p&gt;A blast of icy wind issues forth, enveloping one creature within range. The creature takes 2d8 cold damage if it fails a constitution saving throw and has disadvantage on attacks until the end of its next turn, and half as much damage on a successful save.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">50 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fury of the Few" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_FURY_OF_THE_FEW">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Choose up to 5 creatures within range. While the spell is active, those creatures deal magical damage when considering resistances and immunities, and they may reroll their damage dice once.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fused Crystal" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_FUSED_CRYSTAL">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You target the ground under the feet of a single creature, where it starts growing crystals, encasing their feet. The creature must succeed a dexterity saving throw or be restrained.&lt;/p&gt;
+&lt;p class="indent"&gt;At the start of each of their turns, and optionally as an action on their turn, they make a strength saving throw to escape the crystalline restraints.&lt;/p&gt;
+&lt;p class="indent"&gt;While affected by this spell they have advantage when attempting to resist any affect that would cause them to move. If they are moved despite this, the restraints also break.&lt;/p&gt;
+&lt;p class="indent"&gt;You can attempt a DC 10 ability check with your spellcasting ability to retrieve a tiny crystal from the remains of the restrains within 8 hours of the spells casting.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny crystal, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Geode Prison" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_GEODE_PRISON">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You touch one creature, growing a crystal geode around it, trapping it inside. The Geode has AC equal to your spell save DC and health equal to 80. Any damage from spells and magical effects dealt to the Geode is instead dealt to the imprisoned creature. The creature inside is restrained and can only make attacks against the geode.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">8</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a medium crystal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Greater Convocation" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_GREATER_CONVOCATION">
+		<supports>Cleric, Druid, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You form your magic into an arcane framework accepting the power of other spellcasters to augment your own. Select a spell from first to eighth level that you have the components for. A number of spellcasters up to your spellcasting modifier who are within 60 feet of you may expend a spell slot of the level of spell you chose.&lt;/p&gt;
+&lt;p class="indent"&gt;When at least one spellcaster does so, the spell you chose becomes amplified in one of range, duration, damage, summons, or affected creatures.&lt;/p&gt;
+&lt;p class="indent"&gt;You cannot use any &lt;b&gt;At higher level&lt;/b&gt; propertiesif you convoke a spell.&lt;/p&gt;
+&lt;p class="indent"&gt;You may select a non-ritual spell, in which case the casting time increases by 30 minutes; otherwise the casting time is equal to the ritual spell chosen.&lt;/p&gt;
+&lt;p class="indent"&gt;Only one contributor to the convocation is required to maintain concentration at any given time. So long as at least one person is concentrating, the others may drop and regain concentration as necessary.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">9</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Special</set>
+			<set name="duration">Special</set>
+			<set name="range">Special</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Iron Tether" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_IRON_TETHER">
+		<supports>Paladin, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Two creatures within 50 feet of you and within 50 feet of each other are tethered together by a magical iron cable. The length of the cable is static and does not change from whatever distance existed between the two creatures when you cast the spell.&lt;/p&gt;
+&lt;p class="indent"&gt;If one of the tethered creatures moves or is moved such that it would exceed the length of the cable, the other creature must make either a dexterity saving throw or a strength saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a fail, the pulled creature moves the same distance in the direction the cable is pulling and then falls prone.&lt;/p&gt;
+&lt;p class="indent"&gt;If it succeeds a dexterity saving throw, it moves in the same fashion, but does not fall prone or trigger opportunity attacks.&lt;/p&gt;
+&lt;p class="indent"&gt;If it succeeds a strength check, neither tethered creature moves or suffers any adverse affects.&lt;/p&gt;
+&lt;p class="indent"&gt;The DC is 10 plus 1 for every 10 feet of movement.&lt;/p&gt;
+&lt;p class="indent"&gt;As an action on either of their turns, the creatures may attempt to break the tether. Both creatures make a strength check, the DC is your spellcasting DC. If both creatures succeed the strength check, the tether breaks. If one creature fails, that creature is pulled a number of feet equal to the strength check the other creature made. If both creatures fail, nothing happens.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">50 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">some iron wire</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lightning Fence" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_LIGHTNING_FENCE">
+		<supports>Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You conjure two balls of arcing blue electricity within 30 feet of you and within 30 feet of each other. A continuous bolt of lightning connects the two so long as they remain within 30 feet of each other. Any creature who passes through this arcing bolt of lightning must make a dexterity saving throw or take 5d6 lightning damage, save halves. If hit, they cannot be damaged this way until the start of your next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;On subsequent turns you may use an action to create an additional ball of blue electricity so long as there is at least one ball remaining. Any additional balls of electricity created this way also have bolts of lightning connecting to any other ball within 30 feet of them.&lt;/p&gt;
+&lt;p class="indent"&gt;You may also use your bonus action to move any one created electrical ball up to 15 feet. Any ball that moves such that the distance to any connected other ball is greater than 30 feet has the connection break. Additionally if it moves so that it is within 30 feet of any ball, a new connection will be established. If the ball moves such that the line of lightning moves over a creature, that creature makes the dexterity saving throw as above.&lt;/p&gt;
+&lt;p class="indent"&gt;The lightning balls may not be destroyed except by moving 60 feet away from you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">some conductive wire</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lightning Rod" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_LIGHTNING_ROD">
+		<supports>Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a magical rod of iron from the air, slamming down at a point on a solid surface. If there is a creature at that point, make a spell attack; on a hit the target takes 6d10 bludgeoning damage. The rod remains fixed in the ground where the target it struck (or did not strike) was. When you cast this spell, choose one of the following options:&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Attractive Rod.&lt;/em&gt;&lt;/strong&gt; Creatures within 15 feet of the rod have advantage on saving throws to avoid lightning damage.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Repulsive Rod.&lt;/em&gt;&lt;/strong&gt; Creatures within 15 feet of the rod have disadvantage on saving throws to avoid lightning damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a rod of iron</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mineral Spike" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_MINERAL_SPIKE">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Crystal spikes erupt from the ground in a 20ft radius around a point you can see in range spearing anyone in their way. Creatures in the area make a dexterity saving throw, on a fail they take 6d8 piercing damage and the circle becomes difficult terrain for the next 10 minutes.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a medium crystal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Minor Infusion" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_MINOR_INFUSION">
+		<supports>Bard, Cleric, Druid, Paladin, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Infuse one ally with a minor spirit of flame or cold. If you infuse them with a spirit of flame all piercing, bludgeoning and slashing damage they deal is instead fire damage. If you infuse them with a spirit of cold all piercing, bludgeoning and slashing damage they deal is instead cold damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mist of Befuddled Appearances" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_MIST_OF_BEFUDDLED_APPEARANCES">
+		<supports>Bard, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;A white mist fills a 30 foot cube. When the mist fades, all creatures within the cube have had their appearance disguised with the appearance of one of the affected creatures (your choice).&lt;/p&gt;
+&lt;p class="indent"&gt;Affected creatures are aware their appearance has changed and must succeed an Intelligence (Investigation) each turn check to remember who is who.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an undulating mirror</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Nervous Energy" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_NERVOUS_ENERGY">
+		<supports>Bard</supports>
+		<description>
+			<html>&lt;p&gt;You fill one creature within range with invigorating energy. The target must make a Wisdom saving throw. On a failed save, they must move at least half of their movement speed on each of their turns, and can’t end their turn in the same space they started. The target can repeat this save at the end of each of its turns, ending the effect early on a successful save.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Obvious Distraction" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_OBVIOUS_DISTRACTION">
+		<supports>Bard, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;As part of casting this spell, you choose one visible area and some audible sound, which can be an illusion. Creatures who can see or hear the selected audiovisual phenomenon must make a wisdom saving throw. On a failure the Creature cannot use its passive perception, and makes Wisdom(Perception) checks at disadvantage. This spell lasts as long as the audiovisual phenomenon remains active.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Special</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Perilous Cheeseboard" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_PERILOUS_CHEESEBOARD">
+		<supports>Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Target three points you can see within range. Unnecessarily fragrant cheeses are conjured in those locations causing creatures sharing the space, or within 5 feet of the cheese to make constitution saving throws. Creatures with no sense of smell are immune to this. On a success there is no effect, and they are immune to the effects of this spell for an hour. On a failure they fall prone immediately and become incapacitated, overcome with retching and vomiting. Affected creatures may repeat the saving throw at the beginning of their turn, succeeding frees them from the effect and failure forces them to stay prone for their turn.&lt;/p&gt;
+&lt;p class="indent"&gt;The cheeses naturally decompose after one hour.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">1 pound of any dairy product</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Phantom Hunt" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_PHANTOM_HUNT">
+		<supports>Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Target one creature you can see. That creature makes a wisdom saving throw. On a failure they see a phantasmal animal, identical in shape to the figurine and become Frightened for the duration of the spell. The animal is only seen by the affected creature, but is otherwise indistinguishable from a real version of the animal.&lt;/p&gt;
+&lt;p class="indent"&gt;While Frightened by this spell, a creature must take the Dash action and move away from the phantom by the safest available route on each of its turns, unless there is nowhere to move. The phantom animal follows the affected creature, always within sight or hearing, but it is unable to interact with anything. The affected creature can reattempt the saving throw at the end of its turn so long as it remains within 5 feet of an unaffected allied creature.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;At higher levels.&lt;/em&gt;&lt;/strong&gt; For every spell level above 5th, you can affect one additional creature and create one additional phantom hunter. Each phantom hunter chases at least one creature; if the affected creatures stay as a group, the phantom hunters will chase as a group.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a figurine of an animal worth at least 50gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Piercing Beam" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_PIERCING_BEAM">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;A thin beam of light lances out of your fingertips, 100 feet long and less than an inch wide. Each creature within the line takes 3d6 radiant damage and must make a constitution saving throw. On a success the beam stops and hits no additional targets.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;At higher levels.&lt;/em&gt;&lt;/strong&gt; When you cast this spell using a spell slot of 3rd level or higher, the damage dealt increases by 1d6 for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">100 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Retributive Spirit" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_RETRIBUTIVE_SPIRIT">
+		<supports>Cleric, Paladin, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a small spirit around another creature within range. The creature gains 25 temporary hit points. While the temporary hitpoints remain, any attackers dealing damage to the creature receive the same amount of damage. The spell ends when the temporary hitpoints reach zero.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Rico's Detonations" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_RICOS_DETONATIONS">
+		<supports>Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Choose three points within range.&lt;/em&gt;&lt;/strong&gt; Explosions burst in a 10-foot cube centered around each point. Each creature within an explosion’s area takes 10 fire damage and makes a constitution saving throw, taking 6d6 thunder damage on a failed save and half as much on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;At higher levels.&lt;/em&gt;&lt;/strong&gt; For every two levels above 5th, choose an additional point.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a large hollow cylinder of metal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Roots of Rescue" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_ROOTS_OF_RESCUE">
+		<supports>Druid</supports>
+		<description>
+			<html>&lt;p&gt;You imbue one creature with nature magic, and thick roots launch from the ground and wrap around them, steadying their footing. While on solid ground, they have advantage when shoving other creatures, and can’t be moved against their will. Additionally, they gain 10 feet of climbing speed.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action or reaction, which you take when a creature in range is moved against its will</set>
+			<set name="duration">8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sanctify/Defile" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_SANCTIFYDEFILE">
+		<supports>Cleric, Druid, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;When cast on objects or spaces suffused with power antithetical to your faith you can destroy or render them powerless.&lt;/p&gt;
+&lt;p class="indent"&gt;Roll a d20, adding your spell attack modifier (including proficiency), doubling it if you are proficient in religion; on a success the powers that reside within the item or space are driven out and it becomes entirely mundane. The DC for success is based on the rarity of the item or area you are casting on.&lt;/p&gt;
+&lt;p class="indent"&gt;For casting on spaces; small shrines found in the wilderness would be considered common, whereas a cathedral in a major city would be legendary. Consider the cost and effort put into creating the space, as well as how often and how important its use is.&lt;/p&gt;
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;&lt;b&gt;Rarity&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;DC&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Common&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Uncommon&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Rare&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Very Rare&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Legendary&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">paint, blood or other marking liquid</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Searing Palm" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_SEARING_PALM">
+		<supports>Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Your hands glow with scorching heat. Make an melee spell attack, with advantage if the target has light or no armor. On a hit it deals 1d8 fire damage. This spell can also be used to cauterize wounds and brand flesh and plant matter.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell’s damage increases to 2d8 at 5th level, 3d8 at 11th level and 4d8 at 17th level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Spatter" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_SPATTER">
+		<supports>Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You hurl a sphere of blood, bursting over up to 4 creatures in a 10 foot square. They all make constitution saves, on a fail they take 1d4 acid damage. On subsequent turns, you can use a bonus action and cause the effected creatures to repeat the constitution saves or take the same damage. This damage increases to 2d4 at 5th level, 3d4 at 11th level, and 4d4 at 17th level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Storm Spike" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_STORM_SPIKE">
+		<supports>Druid, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A bolt of lightning strikes from the sky at one creature of your choice, which must succeed on a Dexterity saving throw or take 2d8 lightning damage. Regardless of a hit, the air is electrically charged in the location of the creature, forcing any creature occupying it at the start of your next turn to succeed on a Dexterity saving throw or take 2d8 lightning damage.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;At higher levels.&lt;/em&gt;&lt;/strong&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage of the initial bolt increases by 1d8 for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Unremarkable Sight" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_UNREMARKABLE_SIGHT">
+		<supports>Bard, Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A creature or object you touch is enchanted such that they appear unremarkable to the casual observer. So long as nothing about them is wildly out of place, individuals who perceive them don’t recognize them and passive perception checks will automatically fail, and you are otherwise treated as lightly obscured. If the effected creature attacks or casts a spell, the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;At higher levels.&lt;/em&gt;&lt;/strong&gt; When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">2</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of oil and water</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Unstable Orb" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_UNSTABLE_ORB">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You conjure an orb of volatile magic and throw it towards one creature within range. That creature must use their reaction and succeed a Dexterity saving throw to attempt to catch the orb.&lt;/p&gt;
+&lt;p class="indent"&gt;On the turn of a creature holding the orb it cannot attack, but it can throw the orb as a bonus action, in which case it has a range of 30 feet, and can be thrown at any target. As before, the target must use their reaction and succeed a Dexterity saving throw to catch the orb.&lt;/p&gt;
+&lt;p class="indent"&gt;If the save to catch is failed, or the orb is dropped on a surface at the creatures feet, it explodes dealing 20d8 fire damage. The orb fizzles into nothing when dispelled or submerged in water.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">7</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Wall of Goo" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_WALL_OF_GOO">
+		<supports>Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A wall of semi-transparent slime jiggles out of the ground at a point you choose within range.&lt;/p&gt;
+&lt;p class="indent"&gt;The wall is 5 inches thick and is composed of 10 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. If the wall cuts through a creatures space, that creature is pushed one side of the wall (your choice, per creature).&lt;/p&gt;
+&lt;p class="indent"&gt;The wall grants full cover creatures on the other side are lightly obscured. Creatures may attempt to push through the slime, a successful Strength (Athletics) or Dexterity (Athletics) check against your spell save DC allows a creature to punch through to the other side. A creature who fails the check becomes restrained in the wall and must succeed the same check to escape.&lt;/p&gt;
+&lt;p class="indent"&gt;While stuck in the wall, creatures receive the same damage dealt to that panel.&lt;/p&gt;
+&lt;p class="indent"&gt;On subsequent turns, you can use an action and move every panel up to 10 feet, but you cannot introduce any new gaps in the wall as a result of doing so.&lt;/p&gt;
+&lt;p class="indent"&gt;The wall is an object made of semi-solid slime that can be damaged and destroyed. Each panel has an AC of 12 but is not destroyed unless it takes 30 damage in a single turn. The panels are immune to psychic and poison damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">5</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spoonful of gelatin</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Waller's Bouncing Bubble" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_WALLERS_BOUNCING_BUBBLE">
+		<supports>Sorcerer, Wizard, Warlock, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You launch a glowing sphere of light that ricochets around, bouncing off creatures and objects alike in a 60 foot line. The line can bend where it impacts a creature or object. Each creature impacted by the orb must make a dexterity saving throw, taking 5d10 thunder damage on a failed save or half as much on a successful one. The orb cannot target a creature if it hit them on the previous bounce.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;At higher levels.&lt;/em&gt;&lt;/strong&gt; When you cast this spell using a spell slot of 5th level or higher, the length of the line increases by 10 feet for each slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60-foot line)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an inflated animal bladder</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Whiff" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_WHIFF">
+		<supports>Bard, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You throw up a quick illusion, making it appear as if that attack had just missed. For creatures that can’t see through illusions, it appears they missed and adjust their aim accordingly. Until the start of your next turn, all ranged attacks against you are made with disadvantage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 reaction, which you take when hit with a ranged attack</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Woodsong" type="Spell" source="Meridionalis Magicas" id="ID_COAN_MEMA_SPELL_WOODSONG">
+		<supports>Druid, Ranger, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You sing a song to the wood and cause it to grow into a shape you desire. The shape can become detached when you finish casting and can take up no more than 5 feet in any dimension. The object can have up to 2 hinges and a latch, but nothing more complicated than that.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="level">4</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tree or medium wooden object</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+</elements>

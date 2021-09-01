@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Knight-Potentate" type="Archetype" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FIGHTER_KNIGHT_POTENTATE">
+		<meta>
+			<parent>Fighter</parent>
+		</meta>
+		<supports>Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Power is both a privilege and a responsibility. Though it may come with glory and riches, those who choose to take up lordship over others have a duty to those in their demesne.&lt;/p&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_MASTER_OF_MANY" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_REFLECTED_WEAPONS" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_BELT_OF_POWER" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_HEAVY_IS_THE_HEAD" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_NOBLESSE_OBLIGE" /&gt;
+&lt;div element="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_CROWN_IS_KIN" /&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_MASTER_OF_MANY" level="3" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_REFLECTED_WEAPONS" level="3" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_BELT_OF_POWER" level="7" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_HEAVY_IS_THE_HEAD" level="10" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_NOBLESSE_OBLIGE" level="15" />
+			<grant type="Archetype Feature" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_CROWN_IS_KIN" level="18" />
+		</rules>
+	</element>
+	<element name="Master of Many" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_MASTER_OF_MANY">
+		<meta>
+			<parent>Knight-Potentate</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Beginning when you choose this archetype at 3rd level, you can change your fighting style granted by the Fighter Class every long rest. At all times, one ally gains the effect of your fighting style, and you may change which ally with a bonus action.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can change your fighting style granted by the Fighter Class every long rest. At all times, one ally gains the effect of your fighting style, and you may change which ally with a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Reflected Weapons" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_REFLECTED_WEAPONS">
+		<meta>
+			<parent>Knight-Potentate</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you learn how to use the magic within gems and crystals to form physical weapons. As a 8 hour ritual, you can choose any weapon you are proficient with and set a gem into it, allowing you to magically change the weapon into that of an ally - should their weapon be magical, it gains any non-activated effects while in that form. At any time, you can use your action to change the form of the weapon and make a single attack when you do so. As any one action, your weapon can only become a single two handed weapon, two one handed weapons or a one handed weapon and a shield.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action">
+			<description>As a 8 hour ritual, you can choose any weapon you are proficient with and set a gem into it, allowing you to magically change the weapon into that of an ally - should their weapon be magical, it gains any non-activated effects while in that form. At any time, you can use your action to change the form of the weapon and make a single attack when you do so. As any one action, your weapon can only become a single two handed weapon, two one handed weapons or a one handed weapon and a shield.</description>
+		</sheet>
+	</element>
+	<element name="Belt of Power" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_BELT_OF_POWER">
+		<meta>
+			<parent>Knight-Potentate</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level you gain proficiency in your choice of jeweler’s tools or smith’s tools. You use these new skills to forge a belt of magical enhancement studded with gemstones.&lt;/p&gt;
+&lt;p class="indent"&gt;Whenever you finish a long rest, you can choose a condition. Whenever you would be afflicted by that condition, you can use your reaction to not gain the condition. You can use this feature a number of times equal to your wisdom modifier and regain all uses of it when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="{{belt of power:uses}}/Long Rest">
+			<description>Whenever you finish a long rest, you can choose a condition. Whenever you would be afflicted by that condition, you can use your reaction to not gain the condition.</description>
+		</sheet>
+		<rules>
+			<stat name="belt of power:uses" value="1" bonus="uses" />
+			<stat name="belt of power:uses" value="wisdom:modifier" bonus="uses" />
+		</rules>
+	</element>
+	<element name="Heavy is the Head" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_HEAVY_IS_THE_HEAD">
+		<meta>
+			<parent>Knight-Potentate</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;At 10th level, you forge a crown of jewels that enhances your commanding presence. When you use your Action Surge feature, you can instead grant the extra action to an ally within 30 feet, who takes this action immediately.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you use your Action Surge feature, you can instead grant the extra action to an ally within 30 feet, who takes this action immediately.</description>
+		</sheet>
+	</element>
+	<element name="Noblesse Oblige" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_NOBLESSE_OBLIGE">
+		<meta>
+			<parent>Knight-Potentate</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Beginning at 15th level, whenever you use your Indomitable ability, an ally who failed the same saving throw can also reroll.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you use your Indomitable ability, an ally who failed the same saving throw can also reroll.</description>
+		</sheet>
+	</element>
+	<element name="Crown is Kin" type="Archetype Feature" source="Meridionalis Magicas" id="ID_COAN_MEMA_ARCHETYPE_FEATURE_KNIGHT_POTENTATE_CROWN_IS_KIN">
+		<meta>
+			<parent>Knight-Potentate</parent>
+		</meta>
+		<description>
+			<html>&lt;p&gt;Starting at 18th level, you can use your Second Wind feature twice per short rest and you may also choose an ally to gain an equal number of hitpoints when you use it.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" usage="You can use your Second Wind feature twice per short rest and you may also choose an ally to gain an equal number of hitpoints when you use it.">
+			<description />
+		</sheet>
+	</element>
+</elements>
